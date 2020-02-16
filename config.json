@@ -1,0 +1,7 @@
+{
+    "author": "Mutt",
+    "moveMovie": {
+        "rootDirPath": "movies",
+        "targetDirPath": "target"
+    }
+}
