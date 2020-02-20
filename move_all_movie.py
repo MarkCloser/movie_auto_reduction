@@ -12,7 +12,7 @@ def loadConfig():
 
 # 过滤需要的格式
 def formatSelect(name):
-    if name == '.mp4' or name == '.avi' or name == '.mkv':
+    if name == '.mp4' or name == '.avi' or name == '.mkv' or name == '.ass' or name == '.srt' or name == '.vtt':
         return True
 
 # 遍历获取文件路径
