@@ -29,13 +29,12 @@ configJson = loadConfig()
 
 # 遍历指定文件目录下所有的子文件，筛选将所有的指定格式的视频文件移动到指定文件夹下
 for itemFilePath in getFilesPath(absPath +'/'+ configJson['moveMovie']['rootDirPath']):
-    shutil.move(itemFilePath, absPath +'/'+ configJson['moveMovie']['targetDirPath'])
+    currentFileName = os.path.split(itemFilePath)[1]
+    if os.path.exists(absPath +'/'+ configJson['moveMovie']['targetDirPath'] +'/'+ currentFileName):
+        shutil.move(itemFilePath, absPath +'/'+ configJson['moveMovie']['repeatFileDirPath'])
+    else:
+        shutil.move(itemFilePath, absPath +'/'+ configJson['moveMovie']['targetDirPath'])
   
 
     
     
-
-        
-
-
-

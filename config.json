@@ -2,6 +2,10 @@
     "author": "Mutt",
     "moveMovie": {
         "rootDirPath": "movies",
-        "targetDirPath": "target"
-    }
+        "targetDirPath": "target",
+        "repeatFileDirPath": "repeat"
+    },
+	"modifyMovieName": {
+		"rootDirPath": "movies"
+	}
 }
